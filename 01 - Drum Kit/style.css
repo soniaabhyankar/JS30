@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css?family=Work+Sans&display=swap");
+
+html {
+	font-size: 12px;
+	background: linear-gradient(rgba(0, 0, 0, 0.8),rgba(255, 255, 255, 0.2)), url(http://i.imgur.com/b9r5sEL.jpg) bottom center;
+	background-size: cover;
+}
+
+body,
+html {
+	font-family: "Work Sans", sans-serif;
+	color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.keys {
+	display: flex;
+	flex: 1;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+.key {
+	border: .3rem solid #000;
+	border-radius: 0.4rem;
+	margin: 1rem;
+	padding: 1rem .5rem;
+	text-align: center;
+	width: 10rem;
+	background-color: rgba(0, 0, 0, 0.5);
+	color: #ffffff;
+	text-shadow: 0 0 0.5rem rgb(0, 0, 0);
+	transition: all .08s ease;
+}
+
+.playing {
+	transform: scale(1.1);
+	border-color: rgb(255, 208, 0);
+	box-shadow: 0 0 0.5rem rgba(255, 208, 0, 0.541);
+}
+
+kbd {
+	display: block;
+	font-size: 4rem;
+}
+
+.sound {
+	font-size: 1rem;
+	text-transform: uppercase;
+	color: rgb(255, 208, 0);
+	letter-spacing: 0.1rem;
+}
